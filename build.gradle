@@ -20,6 +20,9 @@ ext {
 
 configure(allprojects) { project ->
 	repositories {
+		//加上阿里云镜像
+		maven { url 'https://maven.aliyun.com/repository/central'}
+		maven { url 'https://maven.aliyun.com/repository/public' }
 		mavenCentral()
 		maven {
 			url "https://repo.spring.io/milestone"
